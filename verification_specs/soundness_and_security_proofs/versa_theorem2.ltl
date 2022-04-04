@@ -1,0 +1,19 @@
+#!/bin/sh
+ltlfilt -c -f '
+(
+
+	G(readGPIO -> ((daddr_in_GPIO && r_en) || (dma_addr_in_GPIO && dma_en)))
+&&
+
+	G((readGPIO && !pc_in_er) -> reset)
+
+)
+
+->
+
+(
+	G(
+		readGPIO && !reset -> pc_in_er
+	)
+)
+' --equivalent-to 'True'

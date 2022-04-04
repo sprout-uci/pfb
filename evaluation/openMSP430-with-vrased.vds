@@ -1,0 +1,1475 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Aug 15 22:40:31 2021
+# Process ID: 13477
+# Current directory: /home/sashi/senprivacy/vivado/privatesensor/privatesensor.runs/synth_1
+# Command line: vivado -log openMSP430.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source openMSP430.tcl
+# Log file: /home/sashi/senprivacy/vivado/privatesensor/privatesensor.runs/synth_1/openMSP430.vds
+# Journal file: /home/sashi/senprivacy/vivado/privatesensor/privatesensor.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source openMSP430.tcl -notrace
+Command: synth_design -top openMSP430 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13495 
+WARNING: [Synth 8-1935] empty port in module declaration [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/AC.v:9]
+WARNING: [Synth 8-1935] empty port in module declaration [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_AC.v:8]
+WARNING: [Synth 8-1935] empty port in module declaration [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_X_stack.v:8]
+WARNING: [Synth 8-1935] empty port in module declaration [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_detect.v:9]
+WARNING: [Synth 8-2490] overwriting previous definition of module VAPE_atomicity [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/VAPE_atomicity.v:2]
+WARNING: [Synth 8-2490] overwriting previous definition of module irq_dma [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/VAPE_irq_dma.v:2]
+WARNING: [Synth 8-2490] overwriting previous definition of module VAPE_rp_gpio [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/VAPE_rp_gpio.v:2]
+WARNING: [Synth 8-2490] overwriting previous definition of module VAPE_wp_ekey [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/VAPE_wp_ekey.v:2]
+WARNING: [Synth 8-2490] overwriting previous definition of module X_stack [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/X_stack.v:1]
+WARNING: [Synth 8-1935] empty port in module declaration [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/AC.v:9]
+WARNING: [Synth 8-2490] overwriting previous definition of module AC [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/AC.v:2]
+WARNING: [Synth 8-2490] overwriting previous definition of module atomicity [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/atomicity.v:2]
+WARNING: [Synth 8-1935] empty port in module declaration [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_AC.v:8]
+WARNING: [Synth 8-2490] overwriting previous definition of module dma_AC [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_AC.v:2]
+WARNING: [Synth 8-1935] empty port in module declaration [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_detect.v:9]
+WARNING: [Synth 8-2490] overwriting previous definition of module dma_detect [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_detect.v:2]
+WARNING: [Synth 8-1935] empty port in module declaration [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_X_stack.v:8]
+WARNING: [Synth 8-2490] overwriting previous definition of module dma_X_stack [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_X_stack.v:2]
+WARNING: [Synth 8-2490] overwriting previous definition of module X_stack [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/X_stack.v:1]
+WARNING: [Synth 8-1935] empty port in module declaration [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/AC.v:9]
+WARNING: [Synth 8-2490] overwriting previous definition of module AC [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/AC.v:2]
+WARNING: [Synth 8-2490] overwriting previous definition of module atomicity [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/atomicity.v:2]
+WARNING: [Synth 8-1935] empty port in module declaration [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_AC.v:8]
+WARNING: [Synth 8-2490] overwriting previous definition of module dma_AC [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_AC.v:2]
+WARNING: [Synth 8-1935] empty port in module declaration [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_detect.v:9]
+WARNING: [Synth 8-2490] overwriting previous definition of module dma_detect [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_detect.v:2]
+WARNING: [Synth 8-1935] empty port in module declaration [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_X_stack.v:8]
+WARNING: [Synth 8-2490] overwriting previous definition of module dma_X_stack [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_X_stack.v:2]
+WARNING: [Synth 8-2490] overwriting previous definition of module vrased [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/vrased.v:13]
+WARNING: [Synth 8-2490] overwriting previous definition of module VAPE_atomicity [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/VAPE_atomicity.v:2]
+WARNING: [Synth 8-2490] overwriting previous definition of module irq_dma [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/VAPE_irq_dma.v:2]
+WARNING: [Synth 8-2490] overwriting previous definition of module VAPE_rp_gpio [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/VAPE_rp_gpio.v:2]
+WARNING: [Synth 8-2490] overwriting previous definition of module VAPE_wp_ekey [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/VAPE_wp_ekey.v:2]
+WARNING: [Synth 8-2490] overwriting previous definition of module vape [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/vape.v:11]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1419.555 ; gain = 36.379 ; free physical = 2940 ; free virtual = 9592
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'openMSP430' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/openMSP430.v:48]
+	Parameter INST_NR bound to: 8'b00000000 
+	Parameter TOTAL_NR bound to: 8'b00000000 
+INFO: [Synth 8-6157] synthesizing module 'omsp_clock_module' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_clock_module.v:48]
+	Parameter BASE_ADDR bound to: 15'b000000001010000 
+	Parameter DEC_WD bound to: 4 - type: integer 
+	Parameter BCSCTL1 bound to: 4'b0111 
+	Parameter BCSCTL2 bound to: 4'b1000 
+	Parameter DEC_SZ bound to: 16 - type: integer 
+	Parameter BASE_REG bound to: 16'b0000000000000001 
+	Parameter BCSCTL1_D bound to: 16'b0000000010000000 
+	Parameter BCSCTL2_D bound to: 16'b0000000100000000 
+INFO: [Synth 8-6157] synthesizing module 'omsp_sync_cell' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_sync_cell.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'omsp_sync_cell' (1#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_sync_cell.v:44]
+INFO: [Synth 8-6157] synthesizing module 'omsp_sync_reset' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_sync_reset.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'omsp_sync_reset' (2#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_sync_reset.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'omsp_clock_module' (3#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_clock_module.v:48]
+INFO: [Synth 8-6157] synthesizing module 'omsp_frontend' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_frontend.v:48]
+	Parameter I_IRQ_FETCH bound to: 3'b000 
+	Parameter I_IRQ_DONE bound to: 3'b001 
+	Parameter I_DEC bound to: 3'b010 
+	Parameter I_EXT1 bound to: 3'b011 
+	Parameter I_EXT2 bound to: 3'b100 
+	Parameter I_IDLE bound to: 3'b101 
+	Parameter E_IRQ_0 bound to: 4'b0010 
+	Parameter E_IRQ_1 bound to: 4'b0001 
+	Parameter E_IRQ_2 bound to: 4'b0000 
+	Parameter E_IRQ_3 bound to: 4'b0011 
+	Parameter E_IRQ_4 bound to: 4'b0100 
+	Parameter E_SRC_AD bound to: 4'b0101 
+	Parameter E_SRC_RD bound to: 4'b0110 
+	Parameter E_SRC_WR bound to: 4'b0111 
+	Parameter E_DST_AD bound to: 4'b1000 
+	Parameter E_DST_RD bound to: 4'b1001 
+	Parameter E_DST_WR bound to: 4'b1010 
+	Parameter E_EXEC bound to: 4'b1011 
+	Parameter E_JUMP bound to: 4'b1100 
+	Parameter E_IDLE bound to: 4'b1101 
+INFO: [Synth 8-6155] done synthesizing module 'omsp_frontend' (4#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_frontend.v:48]
+INFO: [Synth 8-6157] synthesizing module 'omsp_execution_unit' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_execution_unit.v:48]
+INFO: [Synth 8-6157] synthesizing module 'omsp_register_file' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_register_file.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'omsp_register_file' (5#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_register_file.v:48]
+INFO: [Synth 8-6157] synthesizing module 'omsp_alu' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_alu.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'omsp_alu' (6#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_alu.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'omsp_execution_unit' (7#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_execution_unit.v:48]
+INFO: [Synth 8-6157] synthesizing module 'omsp_mem_backbone' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_mem_backbone.v:48]
+	Parameter DMEM_END bound to: 25088 - type: integer 
+	Parameter PMEM_OFFSET bound to: 57344 - type: integer 
+	Parameter SMEM_OFFSET bound to: 40960 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element pmem_dout_bckup_reg was removed.  [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_mem_backbone.v:427]
+WARNING: [Synth 8-6014] Unused sequential element smem_dout_bckup_reg was removed.  [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_mem_backbone.v:436]
+WARNING: [Synth 8-3848] Net srom_wen in module/entity omsp_mem_backbone does not have driver. [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_mem_backbone.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'omsp_mem_backbone' (8#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_mem_backbone.v:48]
+INFO: [Synth 8-6157] synthesizing module 'hwmod' [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/hwmod.v:9]
+	Parameter SDATA_BASE bound to: 16'b0000010000000000 
+	Parameter SDATA_SIZE bound to: 16'b0000110000000000 
+	Parameter SMEM_BASE bound to: 16'b1010000000000000 
+	Parameter SMEM_SIZE bound to: 16'b0100000000000000 
+	Parameter AUTH_HANDLER bound to: 16'b1010000010010100 
+	Parameter KMEM_BASE bound to: 16'b0110101000000000 
+	Parameter KMEM_SIZE bound to: 16'b0000000000011111 
+	Parameter META_MIN bound to: 16'b0000000101000000 
+	Parameter META_SIZE bound to: 16'b0000000000000100 
+	Parameter GPIO_BASE bound to: 16'b0000000000011000 
+	Parameter GPIO_SIZE bound to: 16'b0000000000100000 
+	Parameter EKEY_BASE bound to: 16'b0000001101100000 
+	Parameter EKEY_SIZE bound to: 16'b0000000000011111 
+	Parameter CTR_BASE bound to: 16'b0000001110000000 
+	Parameter CTR_SIZE bound to: 16'b0000000000011111 
+	Parameter RESET_HANDLER bound to: 16'b0000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'vrased' [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/vrased.v:13]
+	Parameter SDATA_BASE bound to: 16'b0000010000000000 
+	Parameter SDATA_SIZE bound to: 16'b0000110000000000 
+	Parameter HMAC_BASE bound to: 16'b0000001101100000 
+	Parameter HMAC_SIZE bound to: 16'b0000000000011111 
+	Parameter SMEM_BASE bound to: 16'b1010000000000000 
+	Parameter SMEM_SIZE bound to: 16'b0100000000000000 
+	Parameter KMEM_BASE bound to: 16'b0110101000000000 
+	Parameter KMEM_SIZE bound to: 16'b0000000000011111 
+	Parameter RESET_HANDLER bound to: 16'b0000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'X_stack' [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/X_stack.v:1]
+	Parameter SDATA_BASE bound to: 16'b0000010000000000 
+	Parameter SDATA_SIZE bound to: 16'b0000110000000000 
+	Parameter HMAC_BASE bound to: 16'b0000001101100000 
+	Parameter HMAC_SIZE bound to: 16'b0000000000011111 
+	Parameter SMEM_BASE bound to: 16'b1010000000000000 
+	Parameter SMEM_SIZE bound to: 16'b0100000000000000 
+	Parameter KMEM_BASE bound to: 16'b0110101000000000 
+	Parameter KMEM_SIZE bound to: 16'b0000000000011111 
+	Parameter RESET_HANDLER bound to: 16'b0000000000000000 
+	Parameter RUN bound to: 1'b0 
+	Parameter KILL bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'X_stack' (9#1) [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/X_stack.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AC' [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/AC.v:2]
+	Parameter SMEM_BASE bound to: 16'b1010000000000000 
+	Parameter SMEM_SIZE bound to: 16'b0100000000000000 
+	Parameter KMEM_BASE bound to: 16'b0110101000000000 
+	Parameter KMEM_SIZE bound to: 16'b0000000000011111 
+	Parameter LAST_SMEM_ADDR bound to: 57342 - type: integer 
+	Parameter RESET_HANDLER bound to: 16'b0000000000000000 
+	Parameter RUN bound to: 1'b0 
+	Parameter KILL bound to: 1'b1 
+WARNING: [Synth 8-308] ignoring empty port [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/AC.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'AC' (10#1) [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/AC.v:2]
+WARNING: [Synth 8-350] instance 'AC_0' of module 'AC' requires 6 connections, but only 5 given [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/vrased.v:81]
+INFO: [Synth 8-6157] synthesizing module 'atomicity' [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/atomicity.v:2]
+	Parameter notRC bound to: 3'b000 
+	Parameter fstRC bound to: 3'b001 
+	Parameter lastRC bound to: 3'b010 
+	Parameter midRC bound to: 3'b011 
+	Parameter kill bound to: 3'b100 
+	Parameter RESET_HANDLER bound to: 16'b0000000000000000 
+	Parameter SMEM_BASE bound to: 16'b1010000000000000 
+	Parameter SMEM_SIZE bound to: 16'b0100000000000000 
+	Parameter LAST_SMEM_ADDR bound to: 57342 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/atomicity.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'atomicity' (11#1) [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/atomicity.v:2]
+INFO: [Synth 8-6157] synthesizing module 'dma_AC' [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_AC.v:2]
+	Parameter KMEM_BASE bound to: 16'b0110101000000000 
+	Parameter KMEM_SIZE bound to: 16'b0000000000011111 
+	Parameter RESET_HANDLER bound to: 16'b0000000000000000 
+	Parameter RUN bound to: 1'b0 
+	Parameter KILL bound to: 1'b1 
+WARNING: [Synth 8-308] ignoring empty port [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_AC.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'dma_AC' (12#1) [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_AC.v:2]
+WARNING: [Synth 8-350] instance 'dma_AC_0' of module 'dma_AC' requires 6 connections, but only 5 given [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/vrased.v:107]
+INFO: [Synth 8-6157] synthesizing module 'dma_detect' [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_detect.v:2]
+	Parameter SMEM_BASE bound to: 16'b1010000000000000 
+	Parameter SMEM_SIZE bound to: 16'b0100000000000000 
+	Parameter LAST_SMEM_ADDR bound to: 57342 - type: integer 
+	Parameter RESET_HANDLER bound to: 16'b0000000000000000 
+	Parameter RUN bound to: 1'b0 
+	Parameter KILL bound to: 1'b1 
+WARNING: [Synth 8-308] ignoring empty port [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_detect.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'dma_detect' (13#1) [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_detect.v:2]
+WARNING: [Synth 8-350] instance 'dma_write_detect_0' of module 'dma_detect' requires 7 connections, but only 6 given [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/vrased.v:120]
+INFO: [Synth 8-6157] synthesizing module 'dma_X_stack' [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_X_stack.v:2]
+	Parameter SDATA_BASE bound to: 16'b0000010000000000 
+	Parameter SDATA_SIZE bound to: 16'b0000110000000000 
+	Parameter RESET_HANDLER bound to: 16'b0000000000000000 
+	Parameter RUN bound to: 1'b0 
+	Parameter KILL bound to: 1'b1 
+WARNING: [Synth 8-308] ignoring empty port [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_X_stack.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'dma_X_stack' (14#1) [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/dma_X_stack.v:2]
+WARNING: [Synth 8-350] instance 'dma_X_stack_0' of module 'dma_X_stack' requires 6 connections, but only 5 given [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/vrased.v:134]
+INFO: [Synth 8-6155] done synthesizing module 'vrased' (15#1) [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/vrased.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'hwmod' (16#1) [/home/sashi/senprivacy/privatesensor/vrased/hw-mod/hwmod.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rom' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_memory/rom.v:41]
+	Parameter ADDR_MSB bound to: 12 - type: integer 
+	Parameter MEM_SIZE bound to: 16384 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_memory/rom.v:73]
+INFO: [Synth 8-3876] $readmem data file './smem.mem' is read successfully [/home/sashi/senprivacy/privatesensor/openmsp430/msp_memory/rom.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'rom' (17#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_memory/rom.v:41]
+INFO: [Synth 8-6157] synthesizing module 'keyrom' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_memory/keyrom.v:35]
+	Parameter ADDR_MSB bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_memory/keyrom.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'keyrom' (18#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_memory/keyrom.v:35]
+INFO: [Synth 8-6157] synthesizing module 'omsp_sfr' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_sfr.v:49]
+	Parameter BASE_ADDR bound to: 15'b000000000000000 
+	Parameter DEC_WD bound to: 4 - type: integer 
+	Parameter IE1 bound to: 4'b0000 
+	Parameter IFG1 bound to: 4'b0010 
+	Parameter CPU_ID_LO bound to: 4'b0100 
+	Parameter CPU_ID_HI bound to: 4'b0110 
+	Parameter CPU_NR bound to: 4'b1000 
+	Parameter DEC_SZ bound to: 16 - type: integer 
+	Parameter BASE_REG bound to: 16'b0000000000000001 
+	Parameter IE1_D bound to: 16'b0000000000000001 
+	Parameter IFG1_D bound to: 16'b0000000000000100 
+	Parameter CPU_ID_LO_D bound to: 16'b0000000000010000 
+	Parameter CPU_ID_HI_D bound to: 16'b0000000001000000 
+	Parameter CPU_NR_D bound to: 16'b0000000100000000 
+INFO: [Synth 8-6155] done synthesizing module 'omsp_sfr' (19#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_sfr.v:49]
+INFO: [Synth 8-6157] synthesizing module 'omsp_watchdog' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_watchdog.v:48]
+	Parameter BASE_ADDR bound to: 15'b000000100100000 
+	Parameter DEC_WD bound to: 2 - type: integer 
+	Parameter WDTCTL bound to: 2'b00 
+	Parameter DEC_SZ bound to: 4 - type: integer 
+	Parameter BASE_REG bound to: 4'b0001 
+	Parameter WDTCTL_D bound to: 4'b0001 
+	Parameter WDTNMIES_MASK bound to: 8'b01000000 
+	Parameter WDTSSEL_MASK bound to: 8'b00000100 
+	Parameter WDTCTL_MASK bound to: 8'b11010111 
+	Parameter WDTNMI_RD_MASK bound to: 8'b00100000 
+	Parameter WDTSSEL_RD_MASK bound to: 8'b00000000 
+	Parameter WDTCTL_RD_MASK bound to: 8'b00100000 
+INFO: [Synth 8-6155] done synthesizing module 'omsp_watchdog' (20#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_watchdog.v:48]
+INFO: [Synth 8-6157] synthesizing module 'omsp_multiplier' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_multiplier.v:48]
+	Parameter BASE_ADDR bound to: 15'b000000100110000 
+	Parameter DEC_WD bound to: 4 - type: integer 
+	Parameter OP1_MPY bound to: 4'b0000 
+	Parameter OP1_MPYS bound to: 4'b0010 
+	Parameter OP1_MAC bound to: 4'b0100 
+	Parameter OP1_MACS bound to: 4'b0110 
+	Parameter OP2 bound to: 4'b1000 
+	Parameter RESLO bound to: 4'b1010 
+	Parameter RESHI bound to: 4'b1100 
+	Parameter SUMEXT bound to: 4'b1110 
+	Parameter DEC_SZ bound to: 16 - type: integer 
+	Parameter BASE_REG bound to: 16'b0000000000000001 
+	Parameter OP1_MPY_D bound to: 16'b0000000000000001 
+	Parameter OP1_MPYS_D bound to: 16'b0000000000000100 
+	Parameter OP1_MAC_D bound to: 16'b0000000000010000 
+	Parameter OP1_MACS_D bound to: 16'b0000000001000000 
+	Parameter OP2_D bound to: 16'b0000000100000000 
+	Parameter RESLO_D bound to: 16'b0000010000000000 
+	Parameter RESHI_D bound to: 16'b0001000000000000 
+	Parameter SUMEXT_D bound to: 16'b0100000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'omsp_multiplier' (21#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_multiplier.v:48]
+INFO: [Synth 8-6157] synthesizing module 'omsp_dbg' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_dbg.v:48]
+	Parameter NR_REG bound to: 25 - type: integer 
+	Parameter CPU_ID_LO bound to: 6'b000000 
+	Parameter CPU_ID_HI bound to: 6'b000001 
+	Parameter CPU_CTL bound to: 6'b000010 
+	Parameter CPU_STAT bound to: 6'b000011 
+	Parameter MEM_CTL bound to: 6'b000100 
+	Parameter MEM_ADDR bound to: 6'b000101 
+	Parameter MEM_DATA bound to: 6'b000110 
+	Parameter MEM_CNT bound to: 6'b000111 
+	Parameter CPU_NR bound to: 6'b011000 
+	Parameter BASE_D bound to: 25'b0000000000000000000000001 
+	Parameter CPU_ID_LO_D bound to: 25'b0000000000000000000000001 
+	Parameter CPU_ID_HI_D bound to: 25'b0000000000000000000000010 
+	Parameter CPU_CTL_D bound to: 25'b0000000000000000000000100 
+	Parameter CPU_STAT_D bound to: 25'b0000000000000000000001000 
+	Parameter MEM_CTL_D bound to: 25'b0000000000000000000010000 
+	Parameter MEM_ADDR_D bound to: 25'b0000000000000000000100000 
+	Parameter MEM_DATA_D bound to: 25'b0000000000000000001000000 
+	Parameter MEM_CNT_D bound to: 25'b0000000000000000010000000 
+	Parameter CPU_NR_D bound to: 25'b1000000000000000000000000 
+	Parameter M_IDLE bound to: 2'b00 
+	Parameter M_SET_BRK bound to: 2'b01 
+	Parameter M_ACCESS_BRK bound to: 2'b10 
+	Parameter M_ACCESS bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_dbg.v:747]
+INFO: [Synth 8-6157] synthesizing module 'omsp_dbg_uart' [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_dbg_uart.v:48]
+	Parameter RX_SYNC bound to: 3'b000 
+	Parameter RX_CMD bound to: 3'b001 
+	Parameter RX_DATA1 bound to: 3'b010 
+	Parameter RX_DATA2 bound to: 3'b011 
+	Parameter TX_DATA1 bound to: 3'b100 
+	Parameter TX_DATA2 bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'omsp_dbg_uart' (22#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_dbg_uart.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'omsp_dbg' (23#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_dbg.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'openMSP430' (24#1) [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/openMSP430.v:48]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_addr[6]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_addr[5]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_addr[4]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_addr[3]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_addr[2]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_addr[1]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_addr[0]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_broadcast[6]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_broadcast[5]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_broadcast[4]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_broadcast[3]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_broadcast[2]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_broadcast[1]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_broadcast[0]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_scl
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port dbg_i2c_sda_in
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[15]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[14]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[13]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[12]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[11]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[10]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[9]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[8]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[7]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[6]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[5]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[4]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[3]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[2]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[1]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mab[0]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mb_en
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mb_wr[1]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port eu_mb_wr[0]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[15]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[14]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[13]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[12]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[11]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[10]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[9]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[8]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[7]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[6]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[5]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[4]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[3]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[2]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[1]
+WARNING: [Synth 8-3331] design omsp_dbg has unconnected port pc[0]
+WARNING: [Synth 8-3331] design omsp_multiplier has unconnected port scan_enable
+WARNING: [Synth 8-3331] design omsp_watchdog has unconnected port aclk
+WARNING: [Synth 8-3331] design omsp_watchdog has unconnected port scan_enable
+WARNING: [Synth 8-3331] design omsp_watchdog has unconnected port scan_mode
+WARNING: [Synth 8-3331] design omsp_watchdog has unconnected port smclk
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port per_din[15]
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port per_din[14]
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port per_din[13]
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port per_din[12]
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port per_din[11]
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port per_din[10]
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port per_din[9]
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port per_din[8]
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port per_din[7]
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port per_din[6]
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port per_din[5]
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port per_din[3]
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port per_din[2]
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port per_din[1]
+WARNING: [Synth 8-3331] design omsp_sfr has unconnected port scan_mode
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[15]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[14]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[13]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[12]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[11]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[10]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[9]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[8]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[7]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[6]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[5]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[4]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[3]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[2]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[1]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_din[0]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_wen[1]
+WARNING: [Synth 8-3331] design rom has unconnected port ram_wen[0]
+WARNING: [Synth 8-3331] design dma_detect has unconnected port dma_addr[15]
+WARNING: [Synth 8-3331] design dma_detect has unconnected port dma_addr[14]
+WARNING: [Synth 8-3331] design dma_detect has unconnected port dma_addr[13]
+WARNING: [Synth 8-3331] design dma_detect has unconnected port dma_addr[12]
+WARNING: [Synth 8-3331] design dma_detect has unconnected port dma_addr[11]
+WARNING: [Synth 8-3331] design dma_detect has unconnected port dma_addr[10]
+WARNING: [Synth 8-3331] design dma_detect has unconnected port dma_addr[9]
+WARNING: [Synth 8-3331] design dma_detect has unconnected port dma_addr[8]
+WARNING: [Synth 8-3331] design dma_detect has unconnected port dma_addr[7]
+WARNING: [Synth 8-3331] design dma_detect has unconnected port dma_addr[6]
+WARNING: [Synth 8-3331] design dma_detect has unconnected port dma_addr[5]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1475.680 ; gain = 92.504 ; free physical = 2941 ; free virtual = 9590
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1475.680 ; gain = 92.504 ; free physical = 2948 ; free virtual = 9597
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1475.680 ; gain = 92.504 ; free physical = 2948 ; free virtual = 9597
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK_100MHz'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK_100MHz'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK_100MHz'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:9]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports CLK_100MHz]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:9]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'SW0'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW0'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW1'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW1'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW2'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW2'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW3'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW3'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW4'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW4'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW5'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW5'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW6'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW6'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW7'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW7'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED0'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED0'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED1'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED1'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED2'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED2'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED3'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED3'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED4'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED4'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED5'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED5'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED6'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED6'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED7'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED7'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED8'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED8'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_A'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_A'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_B'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_B'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_C'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_C'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_D'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_D'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_E'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_E'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_F'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_F'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_G'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_G'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_DP'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_DP'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_AN0'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_AN0'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_AN1'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_AN1'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_AN2'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_AN2'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_AN3'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SEG_AN3'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN0'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN0'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN1'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN1'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN2'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN2'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN3'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN3'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB1'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB1'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC1'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC1'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:187]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:187]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC2'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:189]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:189]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC2'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:190]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:190]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC7'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC7'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:199]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:199]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_RXD'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:271]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:271]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_RXD'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:272]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:272]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:273]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:273]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:274]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:274]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_pin'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:300]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:300]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:300]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports btnL]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:300]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_pin'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:301]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:301]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:301]
+CRITICAL WARNING: [Vivado 12-4739] set_input_delay:No valid object(s) found for '-objects [get_ports btnL]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:301]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_pin'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:302]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:302]
+WARNING: [Vivado 12-584] No ports matched 'SEG_A'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:302]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SEG_A]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:302]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_pin'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:303]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:303]
+WARNING: [Vivado 12-584] No ports matched 'SEG_A'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:303]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SEG_A]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:303]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_pin'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:304]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:304]
+WARNING: [Vivado 12-584] No ports matched 'SEG_D'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:304]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SEG_D]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:304]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_pin'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:305]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:305]
+WARNING: [Vivado 12-584] No ports matched 'SEG_D'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:305]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SEG_D]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:305]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_pin'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:306]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:306]
+WARNING: [Vivado 12-584] No ports matched 'SEG_E'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:306]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SEG_E]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:306]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_pin'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:307]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:307]
+WARNING: [Vivado 12-584] No ports matched 'SEG_E'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:307]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SEG_E]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:307]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_pin'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:308]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:308]
+WARNING: [Vivado 12-584] No ports matched 'SEG_F'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:308]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SEG_F]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:308]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk_pin'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:309]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:309]
+WARNING: [Vivado 12-584] No ports matched 'SEG_F'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:309]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-objects [get_ports SEG_F]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:309]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'CLK_100MHz'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:311]
+WARNING: [Vivado 12-508] No pins matched 'FDCE_0/Q'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:311]
+CRITICAL WARNING: [Vivado 12-4739] create_generated_clock:No valid object(s) found for '-source [get_ports CLK_100MHz]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:311]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'FDCE_0/Q'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:312]
+WARNING: [Vivado 12-508] No pins matched 'FDCE_1/Q'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:312]
+CRITICAL WARNING: [Vivado 12-4739] create_generated_clock:No valid object(s) found for '-source [get_pins FDCE_0/Q]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:312]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'FDCE_1/Q'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:313]
+WARNING: [Vivado 12-508] No pins matched 'FDCE_2/Q'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:313]
+CRITICAL WARNING: [Vivado 12-4739] create_generated_clock:No valid object(s) found for '-source [get_pins FDCE_1/Q]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:313]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'FDCE_2/Q'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:314]
+WARNING: [Vivado 12-508] No pins matched 'FDCE_3/Q'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:314]
+CRITICAL WARNING: [Vivado 12-4739] create_generated_clock:No valid object(s) found for '-source [get_pins FDCE_2/Q]'. [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc:314]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/sashi/senprivacy/privatesensor/openmsp430/contraints_fpga/Basys-3-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1831.094 ; gain = 0.000 ; free physical = 2693 ; free virtual = 9341
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1831.094 ; gain = 0.000 ; free physical = 2693 ; free virtual = 9341
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1831.094 ; gain = 0.000 ; free physical = 2692 ; free virtual = 9340
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1831.094 ; gain = 447.918 ; free physical = 2773 ; free virtual = 9421
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1831.094 ; gain = 447.918 ; free physical = 2773 ; free virtual = 9421
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1831.094 ; gain = 447.918 ; free physical = 2775 ; free virtual = 9424
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'i_state_reg' in module 'omsp_frontend'
+INFO: [Synth 8-802] inferred FSM for state register 'e_state_reg' in module 'omsp_frontend'
+INFO: [Synth 8-5544] ROM "inst_dext" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_state_nxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_state_nxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_state_nxt5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exec_dst_wr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exec_jmp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_state_nxt0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_state_nxt0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_state_nxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_first_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_first_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_first_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_first_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_first_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_dext" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_state_nxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_state_nxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_state_nxt5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exec_dst_wr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exec_jmp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_state_nxt0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_state_nxt0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_state_nxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_first_state5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_as_nxt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_as_nxt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_as_nxt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_as_nxt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_ad_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_ad_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_ad_nxt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ext_incr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "get_irq_num" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_state_nxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_state_nxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_state_nxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_state_nxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_state_nxt0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_state_nxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e_state_nxt0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mb_wr_msk1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'pc_state_reg' in module 'atomicity'
+INFO: [Synth 8-5546] ROM "pc_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "pc_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pc_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pc_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pc_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5547] Trying to map ROM "mem" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "mem" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-802] inferred FSM for state register 'uart_state_reg' in module 'omsp_dbg_uart'
+INFO: [Synth 8-5544] ROM "uart_state_nxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_state_nxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_state_nxt2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_state_nxt2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_state_nxt3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_state_nxt3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'mem_state_reg' in module 'omsp_dbg'
+INFO: [Synth 8-5546] ROM "reg_dec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "mem_state_nxt0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mem_state_nxt1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 E_IRQ_1 |                             1001 |                             0001
+                 E_IRQ_2 |                             1101 |                             0000
+                 E_IRQ_3 |                             0000 |                             0011
+                 E_IRQ_4 |                             0001 |                             0100
+                  E_EXEC |                             0010 |                             1011
+                E_DST_WR |                             1011 |                             1010
+                  E_JUMP |                             1010 |                             1100
+                E_SRC_WR |                             1100 |                             0111
+                  E_IDLE |                             0011 |                             1101
+                 E_IRQ_0 |                             0100 |                             0010
+                E_SRC_AD |                             0101 |                             0101
+                E_SRC_RD |                             0110 |                             0110
+                E_DST_AD |                             0111 |                             1000
+                E_DST_RD |                             1000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'e_state_reg' using encoding 'sequential' in module 'omsp_frontend'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             I_IRQ_FETCH |                              000 |                              000
+              I_IRQ_DONE |                              101 |                              001
+                   I_DEC |                              010 |                              010
+                  I_IDLE |                              100 |                              101
+                  I_EXT1 |                              011 |                              011
+                  I_EXT2 |                              001 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'i_state_reg' using encoding 'sequential' in module 'omsp_frontend'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    kill |                            00001 |                              100
+                   notRC |                            00010 |                              000
+                   fstRC |                            01000 |                              001
+                   midRC |                            10000 |                              011
+                  lastRC |                            00100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pc_state_reg' using encoding 'one-hot' in module 'atomicity'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RX_SYNC |                              101 |                              000
+                  RX_CMD |                              000 |                              001
+                RX_DATA1 |                              100 |                              010
+                RX_DATA2 |                              011 |                              011
+                TX_DATA1 |                              010 |                              100
+                TX_DATA2 |                              001 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'uart_state_reg' using encoding 'sequential' in module 'omsp_dbg_uart'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  M_IDLE |                             0010 |                               00
+                M_ACCESS |                             0001 |                               11
+               M_SET_BRK |                             1000 |                               01
+            M_ACCESS_BRK |                             0100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mem_state_reg' using encoding 'one-hot' in module 'omsp_dbg'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1831.094 ; gain = 447.918 ; free physical = 2760 ; free virtual = 9410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 5     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 4     
+	   4 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     17 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 30    
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 11    
+	                1 Bit    Registers := 50    
++---ROMs : 
+	                              ROMs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  10 Input     25 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 40    
+	   3 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   5 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 2     
+	   5 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      7 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 16    
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 19    
+	   5 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 9     
+	   8 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 2     
+	  58 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 4     
+	   7 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 2     
+	  17 Input      3 Bit        Muxes := 1     
+	  18 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 17    
+	   4 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 78    
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module omsp_sync_cell 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module omsp_sync_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module omsp_clock_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module omsp_frontend 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 6     
+	   3 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 1     
+	   5 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   5 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 15    
+	   3 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 2     
+	  58 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 4     
+	   7 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 2     
+	  17 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 1     
+Module omsp_register_file 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 22    
+Module omsp_alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 4     
+	   4 Input      5 Bit       Adders := 4     
++---XORs : 
+	   2 Input     17 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+Module omsp_execution_unit 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module omsp_mem_backbone 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module X_stack 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module AC 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module atomicity 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module dma_AC 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module dma_detect 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module dma_X_stack 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module keyrom 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module omsp_sfr 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module omsp_watchdog 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module omsp_multiplier 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 7     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module omsp_dbg_uart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 2     
+	  18 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module omsp_dbg 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  10 Input     25 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP product, operation Mode is: A*B.
+DSP Report: operator product is absorbed into DSP product.
+INFO: [Synth 8-5546] ROM "reg_dec" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'clock_module_0/bcsctl2_reg[0]' (FDCE) to 'clock_module_0/bcsctl2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'watchdog_0/wdtctl_reg[5]' (FDCE) to 'watchdog_0/wdtctl_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (watchdog_0/\wdtctl_reg[3] )
+INFO: [Synth 8-3886] merging instance 'clock_module_0/bcsctl2_reg[4]' (FDCE) to 'clock_module_0/bcsctl2_reg[5]'
+INFO: [Synth 8-3886] merging instance 'clock_module_0/bcsctl2_reg[5]' (FDCE) to 'clock_module_0/bcsctl2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'clock_module_0/bcsctl2_reg[6]' (FDCE) to 'clock_module_0/bcsctl2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'clock_module_0/bcsctl1_reg[7]' (FDCE) to 'clock_module_0/bcsctl1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (clock_module_0/\bcsctl2_reg[7] )
+INFO: [Synth 8-3886] merging instance 'clock_module_0/bcsctl1_reg[0]' (FDCE) to 'clock_module_0/bcsctl1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'clock_module_0/bcsctl1_reg[2]' (FDCE) to 'clock_module_0/bcsctl1_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (clock_module_0/\bcsctl1_reg[6] )
+INFO: [Synth 8-3886] merging instance 'frontend_0/irq_num_reg[5]' (FDPE) to 'frontend_0/irq_num_reg[4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (frontend_0/\irq_num_reg[4] )
+INFO: [Synth 8-3886] merging instance 'execution_unit_0/register_file_0/r2_reg[15]' (FDC) to 'execution_unit_0/register_file_0/r2_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (execution_unit_0/\register_file_0/r1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'execution_unit_0/register_file_0/r2_reg[6]' (FDC) to 'execution_unit_0/register_file_0/r2_reg[14]'
+INFO: [Synth 8-3886] merging instance 'execution_unit_0/register_file_0/r2_reg[9]' (FDC) to 'execution_unit_0/register_file_0/r2_reg[14]'
+INFO: [Synth 8-3886] merging instance 'execution_unit_0/register_file_0/r2_reg[10]' (FDC) to 'execution_unit_0/register_file_0/r2_reg[14]'
+INFO: [Synth 8-3886] merging instance 'execution_unit_0/register_file_0/r2_reg[11]' (FDC) to 'execution_unit_0/register_file_0/r2_reg[14]'
+INFO: [Synth 8-3886] merging instance 'execution_unit_0/register_file_0/r2_reg[12]' (FDC) to 'execution_unit_0/register_file_0/r2_reg[14]'
+INFO: [Synth 8-3886] merging instance 'execution_unit_0/register_file_0/r2_reg[13]' (FDC) to 'execution_unit_0/register_file_0/r2_reg[14]'
+INFO: [Synth 8-3886] merging instance 'frontend_0/inst_jmp_bin_reg[1]' (FDCE) to 'frontend_0/inst_src_bin_reg[3]'
+INFO: [Synth 8-3886] merging instance 'frontend_0/inst_jmp_bin_reg[0]' (FDCE) to 'frontend_0/inst_src_bin_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (execution_unit_0/\register_file_0/r2_reg[14] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1831.094 ; gain = 447.918 ; free physical = 2730 ; free virtual = 9382
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|omsp_multiplier | A*B         | 17     | 9      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_0/srom_0/ram_addr_reg_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/srom_0/ram_addr_reg_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/srom_0/ram_addr_reg_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/srom_0/ram_addr_reg_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_1/skey_0/rom_addr_reg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_multiplier.v:173]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1831.094 ; gain = 447.918 ; free physical = 2579 ; free virtual = 9231
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1831.094 ; gain = 447.918 ; free physical = 2577 ; free virtual = 9229
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [/home/sashi/senprivacy/privatesensor/openmsp430/msp_core/omsp_multiplier.v:173]
+INFO: [Synth 8-6837] The timing for the instance srom_0/ram_addr_reg_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance srom_0/ram_addr_reg_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance srom_0/ram_addr_reg_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance srom_0/ram_addr_reg_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance skey_0/rom_addr_reg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1879.352 ; gain = 496.176 ; free physical = 2576 ; free virtual = 9228
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1879.352 ; gain = 496.176 ; free physical = 2576 ; free virtual = 9228
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1879.352 ; gain = 496.176 ; free physical = 2576 ; free virtual = 9228
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1879.352 ; gain = 496.176 ; free physical = 2576 ; free virtual = 9228
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1879.352 ; gain = 496.176 ; free physical = 2576 ; free virtual = 9228
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1879.352 ; gain = 496.176 ; free physical = 2576 ; free virtual = 9228
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1879.352 ; gain = 496.176 ; free physical = 2576 ; free virtual = 9228
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |CARRY4     |   104|
+|3     |DSP48E1    |     1|
+|4     |LUT1       |    50|
+|5     |LUT2       |   144|
+|6     |LUT3       |   171|
+|7     |LUT4       |   544|
+|8     |LUT5       |   529|
+|9     |LUT6       |   673|
+|10    |MUXF7      |     1|
+|11    |RAMB18E1   |     1|
+|12    |RAMB36E1   |     1|
+|13    |RAMB36E1_1 |     1|
+|14    |RAMB36E1_2 |     1|
+|15    |RAMB36E1_3 |     1|
+|16    |FDCE       |   674|
+|17    |FDPE       |    34|
+|18    |FDRE       |    16|
+|19    |IBUF       |   104|
+|20    |OBUF       |   142|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------------------+--------------------+------+
+|      |Instance                 |Module              |Cells |
++------+-------------------------+--------------------+------+
+|1     |top                      |                    |  3193|
+|2     |  clock_module_0         |omsp_clock_module   |    50|
+|3     |    sync_cell_lfxt_clk   |omsp_sync_cell_1    |    13|
+|4     |    sync_cell_puc        |omsp_sync_cell_2    |    10|
+|5     |    sync_reset_por       |omsp_sync_reset     |     3|
+|6     |  dbg_0                  |omsp_dbg            |   897|
+|7     |    dbg_uart_0           |omsp_dbg_uart       |   313|
+|8     |      sync_cell_uart_rxd |omsp_sync_cell_0    |    35|
+|9     |  execution_unit_0       |omsp_execution_unit |   391|
+|10    |    register_file_0      |omsp_register_file  |   352|
+|11    |  frontend_0             |omsp_frontend       |  1021|
+|12    |  hdmod_0                |hwmod               |    34|
+|13    |    vrased_0             |vrased              |    34|
+|14    |      AC_0               |AC                  |     5|
+|15    |      X_stack_0          |X_stack             |     6|
+|16    |      atomicity_0        |atomicity           |    11|
+|17    |      dma_AC_0           |dma_AC              |     6|
+|18    |      dma_X_stack_0      |dma_X_stack         |     3|
+|19    |      dma_write_detect_0 |dma_detect          |     2|
+|20    |  mem_backbone_0         |omsp_mem_backbone   |   267|
+|21    |  multiplier_0           |omsp_multiplier     |   170|
+|22    |  sfr_0                  |omsp_sfr            |    24|
+|23    |    sync_cell_nmi        |omsp_sync_cell      |     2|
+|24    |  skey_0                 |keyrom              |     4|
+|25    |  srom_0                 |rom                 |    20|
+|26    |  watchdog_0             |omsp_watchdog       |    60|
++------+-------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1879.352 ; gain = 496.176 ; free physical = 2576 ; free virtual = 9228
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 143 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1879.352 ; gain = 140.762 ; free physical = 2641 ; free virtual = 9293
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1879.359 ; gain = 496.176 ; free physical = 2641 ; free virtual = 9293
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 111 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1911.367 ; gain = 0.000 ; free physical = 2586 ; free virtual = 9237
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+179 Infos, 255 Warnings, 95 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1911.367 ; gain = 528.312 ; free physical = 2649 ; free virtual = 9300
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1911.367 ; gain = 0.000 ; free physical = 2649 ; free virtual = 9300
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/sashi/senprivacy/vivado/privatesensor/privatesensor.runs/synth_1/openMSP430.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file openMSP430_utilization_synth.rpt -pb openMSP430_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 15 22:41:13 2021...

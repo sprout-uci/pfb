@@ -1,0 +1,147 @@
+-- CODE RESERVED ROM
+SMEM_BASE := 0uh16_A000;
+SMEM_SIZE := 0uh16_4000;
+LAST_SMEM_ADDR := SMEM_BASE + SMEM_SIZE - 0uh16_2;
+
+-- KEY RESERVED ROM
+KMEM_BASE := 0uh16_6A00;
+KMEM_SIZE := 0uh16_001F;
+
+-- STACK RESERVED ROM
+SDATA_BASE := 0uh16_0400;
+SDATA_SIZE := 0uh16_0C00;
+
+-- GPIO REGION
+GPIO_BASE := 0uh16_0018;
+GPIO_SIZE := 0uh16_0020;
+
+-- EKEY REGION
+EKEY_BASE := 0uh16_0360;
+EKEY_SIZE := 0uh16_001F;
+
+-- HMAC OUTPUT RESERVED ROM = EKEY in VERSA
+HMAC_BASE := EKEY_BASE;
+HMAC_SIZE := EKEY_SIZE + 0uh16_0020;
+
+-- METADATA
+META_BASE := 0uh16_0140;
+META_SIZE := 0uh16_0004;
+LAST_META := META_BASE + META_SIZE - 0uh16_2;
+
+-- ER
+ER_BASE := "ER_min";
+LAST_ER := "ER_max";
+
+-- INSTRUCTION POINTER MARKERS
+RESET_HANDLER := 0uh16_0000;
+AUTH_HANDLER := 0uh16_A0F0;
+
+
+------ Variables --------
+
+pc_auth := "pc" = AUTH_HANDLER;
+pc_reset := "pc" = RESET_HANDLER;
+
+
+read_daddr_in_GPIO := "data_en" & ("data_addr" >= GPIO_BASE & "data_addr" <= GPIO_BASE + GPIO_SIZE - 0uh16_1);
+read_dma_addr_in_GPIO := "dma_en" & ("dma_addr" >= GPIO_BASE & "dma_addr" <= GPIO_BASE + GPIO_SIZE - 0uh16_1);
+
+read_GPIO := read_daddr_in_GPIO | read_dma_addr_in_GPIO;
+
+read_daddr_in_EKEY := "data_en" & ("data_addr" >= EKEY_BASE & "data_addr" <= EKEY_BASE + EKEY_SIZE - 0uh16_1);
+write_daddr_in_EKEY := "data_wr" & ("data_addr" >= EKEY_BASE & "data_addr" <= EKEY_BASE + EKEY_SIZE - 0uh16_1);
+read_dma_addr_in_EKEY := "dma_en" & ("dma_addr" >= EKEY_BASE & "dma_addr" <= EKEY_BASE + EKEY_SIZE - 0uh16_1);
+
+read_EKEY := read_daddr_in_EKEY | read_dma_addr_in_EKEY;
+write_EKEY := write_daddr_in_EKEY | read_dma_addr_in_EKEY;
+
+write_daddr_in_ER := "data_wr" & ("data_addr" >= ER_BASE & "data_addr" <= LAST_ER);
+write_dma_addr_in_ER := "dma_en" & ("dma_addr" >= ER_BASE & "dma_addr" <= LAST_ER);
+
+write_ER := write_daddr_in_ER | write_dma_addr_in_ER;
+
+write_daddr_in_META := "data_wr" & ("data_addr" >= META_BASE & "data_addr" <= LAST_META);
+write_dma_addr_in_META := "dma_en" & ("dma_addr" >= META_BASE & "dma_addr" <= LAST_META);
+
+write_META := write_daddr_in_META | write_dma_addr_in_META;
+
+pc_fst_ER := "pc" = ER_BASE;
+pc_lst_ER := "pc" = (LAST_ER);
+pc_in_ER := "pc" >= ER_BASE & "pc" <= (LAST_ER);	
+
+pc_in_srom := "pc" >= SMEM_BASE & "pc" <= LAST_SMEM_ADDR;
+next_pc_in_srom := next("pc") >= SMEM_BASE & next("pc") <= LAST_SMEM_ADDR;
+access_key := "data_en" & "data_addr" >= KMEM_BASE & "data_addr" < (KMEM_BASE + KMEM_SIZE);
+
+pc_not_in_srom := !pc_in_srom; 
+daddr_not_in_sdata := "data_addr" < SDATA_BASE | "data_addr" > SDATA_BASE + SDATA_SIZE - 0uh16_1;
+daddr_in_sdata := !daddr_not_in_sdata;
+daddr_not_in_HMAC := "data_addr" < HMAC_BASE | "data_addr" > HMAC_BASE + HMAC_SIZE - 0uh16_1;
+
+dma_access_key := "dma_en" & "dma_addr" >= KMEM_BASE & "dma_addr" < (KMEM_BASE + KMEM_SIZE);
+dma_access_X_stack := "dma_en" & "dma_addr" >= SDATA_BASE & "dma_addr" < (SDATA_BASE + SDATA_SIZE);
+
+
+----------------------------------
+------- PFB PROPERTIES -----------
+----------------------------------
+
+---- Read protection on GPIO Memory Region -------
+
+LTLSPEC G(("reset") -> (((!read_GPIO | "reset") U pc_auth) | G (!read_GPIO | "reset")));
+LTLSPEC G((pc_lst_ER) -> (((!read_GPIO | "reset") U pc_auth) | G (!read_GPIO | "reset")));
+LTLSPEC G(("reset" | pc_lst_ER | write_ER | write_META) -> ((!read_GPIO | "reset") U pc_auth) | G (!read_GPIO | "reset"));
+LTLSPEC G((read_GPIO & !pc_in_ER) -> "reset");
+LTLSPEC G((write_ER | write_META) -> ((!read_GPIO | "reset") U pc_auth) | G (!read_GPIO | "reset"));
+LTLSPEC G(pc_auth & (write_ER | write_META) -> "reset");
+
+---- Read protection on EKEY Memory Region -------
+
+LTLSPEC G(("reset") -> (((!read_EKEY | "reset") U pc_auth) | G (!read_EKEY | "reset")));
+LTLSPEC G((pc_lst_ER) -> (((!read_EKEY | "reset") U pc_auth) | G (!read_EKEY | "reset")));
+LTLSPEC G(("reset" | pc_lst_ER | write_ER | write_META) -> ((!read_EKEY | "reset") U pc_auth) | G (!read_EKEY | "reset"));
+LTLSPEC G((read_EKEY & !pc_in_ER) -> "reset");
+LTLSPEC G((write_ER | write_META) -> ((!read_EKEY | "reset") U pc_auth) | G (!read_EKEY | "reset"));
+
+---- Write protection on EKEY Memory Region ------
+
+LTLSPEC G((write_EKEY & !pc_in_srom) -> "reset");
+
+---- Atomic execution of ER Memory Region -------
+
+LTLSPEC G(!"reset" & pc_in_ER & !next(pc_in_ER) -> pc_lst_ER | next("reset"));
+LTLSPEC G(!"reset" & !pc_in_ER & next(pc_in_ER) -> next(pc_fst_ER) | next("reset"));
+LTLSPEC G((pc_in_ER & ("irq" | "dma_en")) -> "reset");
+
+
+-----------------------------
+-----VRASED s PROPERTIES-----
+-----------------------------
+
+-- Reset correctness
+LTLSPEC  G("reset" -> (("reset" U pc_reset) | G("reset")));
+
+-- Exclusive Access to Key ---
+LTLSPEC G ((!pc_in_srom & access_key) -> "reset");
+
+-- Atomicity Rules: (1) cannot leave in the middle of ROM code and (2) cannot jump into the middle of ROM code ---
+LTLSPEC G ( !"reset" & pc_in_srom & !next_pc_in_srom -> "pc" = LAST_SMEM_ADDR | next("reset") );
+LTLSPEC G ( !"reset" & !pc_in_srom & next_pc_in_srom -> next("pc") = SMEM_BASE | next("reset") );
+LTLSPEC G (pc_in_srom & "irq" -> "reset");
+
+-- Exclusive Access to Secure Stack: (1) Only ROM code can read/write the stack and (2) ROM code cannot write outside the stack ---
+LTLSPEC G ((pc_not_in_srom & ("data_en" | "data_wr") & daddr_in_sdata) -> "reset");
+LTLSPEC G ((pc_in_srom & "data_wr" & daddr_not_in_sdata & daddr_not_in_HMAC) -> "reset");
+
+-- DMA cant access the key
+LTLSPEC G (dma_access_key -> "reset");
+
+-- DMA write cant happen while in ROM
+LTLSPEC G (("dma_en" & pc_in_srom) -> "reset");
+
+-- Disallow any DMA access to the exclusive stack
+LTLSPEC G (dma_access_X_stack -> "reset");
+
+----LTLSPEC ("reset" U ("pc" = RESET_HANDLER) | G"reset");
+--it s Weak until http://nusmv.fbk.eu/courses/icaps03/icaps03-mct.pdf p31
+----------------------------

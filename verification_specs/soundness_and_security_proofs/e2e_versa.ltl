@@ -1,0 +1,73 @@
+#!/bin/sh
+ltlfilt -c -f '
+(
+
+	reset
+	&&
+
+	G(pc_ermin -> pc_in_er)
+	&&
+	G(pc_ermax -> pc_in_er)
+	&&
+
+	G(pc_auth -> pc_in_srom)
+	&&
+	G(!(pc_in_srom && pc_in_er))
+	&&
+
+	G(reset -> !pc_in_srom)
+	&&
+
+	G(read_GPIO -> ((daddr_in_GPIO && data_en) || (dma_addr_in_GPIO && dma_en)))
+	&&
+	G(read_EKEY -> ((daddr_in_EncKey && data_en) || (dma_addr_in_EncKey && dma_en)))
+	&&
+	G(write_EKEY -> ((daddr_in_EncKey && data_wr) || (dma_addr_in_EncKey && dma_en)))
+	&&
+	G(write_META -> ((daddr_in_META && data_wr) || (dma_addr_in_META && dma_en)))
+	&&
+	G(write_ER -> ((daddr_in_ER && data_wr) || (dma_addr_in_ER && dma_en)))
+	&&
+
+		G((pc_ermax || reset || write_ER || write_META)  -> (!read_GPIO || reset) W pc_auth )
+	&&
+	G((read_GPIO && !pc_in_er) -> reset)
+	&&
+
+	G((pc_ermax || reset || wrtie_ER || wrtie_META) -> (!read_EKEY || reset) W pc_auth)
+	&&
+	G((read_EKEY && !pc_in_er) -> reset)
+	&&
+
+	G((write_EKEY && !pc_in_srom) -> reset)
+	&&
+
+	G( !reset && pc_in_er && !X(pc_in_er) -> pc_ermax || X(reset))
+	&&
+	G( !reset && !pc_in_er && X(pc_in_er) -> X(pc_ermin) || X(reset))
+	&&
+	G((pc_in_er && (irq || dma_en)) -> reset)
+	&&
+
+		G(pc_auth && (write_ER || write_META) -> reset)
+)
+
+->
+(
+	G(
+		(pc_in_er -> (pc_in_er && !irq && !dma_en) W (pc_ermax || reset))
+		&&
+			(!reset && !pc_in_er && X(pc_in_er) -> X(pc_ermin) || X(reset))
+		&&
+		(read_GPIO && !reset -> pc_in_er)
+	)
+
+	&&
+
+	(
+		(pc_auth && (pc_auth -> (!write_ER && !write_META && (write_EKEY -> pc_in_srom)) U pc_ermin) )
+		R
+		!(read_GPIO && !reset)
+	)
+)
+' --equivalent-to 'True'

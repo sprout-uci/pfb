@@ -1,0 +1,25 @@
+#!/bin/sh
+ltlfilt -c -f '
+(
+
+	G(pc_ermin -> pc_in_er)
+&&
+	G(pc_ermax -> pc_in_er)
+&&
+
+	G( !reset && pc_in_er && !X(pc_in_er) -> pc_ermax || X(reset) )
+&&
+	G( !reset && !pc_in_er && X(pc_in_er)  -> X(pc_ermin) || X(reset) )
+&&
+	G((pc_in_er && (irq || dma_en)) -> reset)
+
+)
+
+->
+
+(
+
+G( (pc_ermin) -> (pc_in_er && !irq && !dma_en) W (pc_ermax || reset) )
+
+)
+' --equivalent-to 'True'
