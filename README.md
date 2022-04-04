@@ -27,7 +27,8 @@ counterpart and becomes accessible to software.
 
 In this work, we formalize PfB and design Verified Remote
 Sensing Authorization (VERSA) – a provably secure and formally
-verified sensor architecture guaranteeing that only correct execution of expected and explicitly authorized software can access
+verified sensor architecture guaranteeing that only correct execution of 
+expected and explicitly authorized software can access
 and manipulate sensing interfaces, specifically, General Purpose
 Input/Output (GPIO), which is the usual boundary between
 analog and digital worlds on embedded devices. This guarantee
@@ -90,7 +91,7 @@ This repository has a test application, provided in the test folder. To build VE
 Note that this step will not run any simulation, but simply generate the MSP430 binaries corresponding to the test-case of choice.
 As a result of the build, two files pmem.mem and smem.mem should be created inside msp_bin directory:
 
-- pmem.mem program memory contents corresponding the application binaries
+- pmem.mem program memory contents corresponding to the application binaries
 
 - smem.mem contains ROM binary.
 
@@ -100,7 +101,7 @@ If you want to clean the built files run:
 
         make clean
 
-        Note: Latest Build tested using msp430-gcc (GCC) 4.6.3 2012-03-01
+Note: Latest Build tested using msp430-gcc (GCC) 4.6.3 2012-03-01
 
 ## Creating a VERSA project on Vivado and Running Synthesis
 
@@ -199,9 +200,9 @@ Your FPGA should be now displayed on the hardware manager menu.
 
 4- Right-click your FPGA and select "Program Device" to program the FPGA.
 
-## Description of Provided test application
+### Description of Provided test application named "test"
 
-	This is a sample application to test whether software is able to read GPIO or not. If the provided AToken in the main.c file is generated from the application function of this test program, then VERSA grants privileges for this function to read GPIO and encryption key. The application (after authorization) reads the GPIO input and does One-Time-Pad encryption of it with the derived encryption key in eKR region.
+This is a sample application to test whether software is able to read GPIO after successful authorization by VERSA. If the provided AToken in the main.c file is generated from the application function of this test program, then VERSA grants privileges for this function to read GPIO and encryption key. The application (after authorization) reads the GPIO input and does One-Time-Pad encryption of it with the derived encryption key in eKR region.
 
 
 
