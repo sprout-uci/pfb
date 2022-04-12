@@ -1,6 +1,7 @@
 # VERSA Formally Verified Implementation:
 
 **[This repository is still under construction]**
+**[To appear in IEEE S&P'22]**
 
 With the growing popularity of the Internet-ofThings (IoT), massive (and growing) numbers of specialized
 devices are deployed worldwide, in many everyday settings,
@@ -40,7 +41,6 @@ verified and open-sourced, targeting resource-constrained sensors
 commonly used at the IoT edges. Experimental results show that
 PfB is both achievable and affordable even on these devices.
 
-**[To appear in IEEE S&P'22]**
 
 ### VERSA Directory Structure
 

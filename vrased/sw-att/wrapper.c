@@ -11,9 +11,9 @@
 #define ATOKEN_CTRL (CHAL_ADDR + 32)
 
 #define ENC_KEY_ADDR 0x360
-#define CTR_ADDR (ENC_KEY_ADDR + 32)
+#define CTR_ADDR 0xffc0
 
-#define AUTH_HANDLER 0xa0f0
+#define AUTH_HANDLER 0xa0aa
 
 
 extern void hmac(uint8_t *mac, uint8_t *key, uint32_t keylen, uint8_t *data, uint32_t datalen);
@@ -43,11 +43,8 @@ __attribute__ ((section (".do_mac.call"))) void Hacl_HMAC_SHA2_256_hmac_entry()
   uint8_t key[64] = {0};
 
   // Check if challenge value is greater than the latest challenge/counter
-  if (memcmp((uint8_t*) CHAL_ADDR, (uint8_t*) ctr, 32) > 0)
+  if (memcmp((uint8_t*) CHAL_ADDR, (uint8_t*) CTR_ADDR, 32) > 0)
   {
-    //Update the CTR to match the current challenge, so that next time it cannot be replayed.
-    memcpy((uint8_t*) CTR_ADDR, (uint8_t*) CHAL_ADDR, 32);
-
     // Copy the master key from MASTER_KEY_ADDR to the key buffer.
     memcpy(key, (uint8_t*)MASTER_KEY_ADDR, 64);
     
@@ -65,6 +62,11 @@ __attribute__ ((section (".do_mac.call"))) void Hacl_HMAC_SHA2_256_hmac_entry()
     {
       // If control (pc) reaches this point, then authentication is successful.
       // VERSA hardware instantly grants access to GPIO to ER from this point (until ER ends or not modified).
+
+      // Update the CTR to match the current challenge, so that next time it cannot be replayed.
+      memcpy((uint8_t*) CTR_ADDR, (uint8_t*) CHAL_ADDR, 32);
+      
+      // Write derived encryption key to ENC_KEY_ADDR for ER's use.
       memcpy((uint8_t*)ENC_KEY_ADDR, (uint8_t*) key, 32);
     }
   }

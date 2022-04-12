@@ -16,13 +16,14 @@ module vrased (
     data_en,
     data_wr,
     data_addr,
+    
     dma_addr,
     dma_en,
+
     irq,
     
     reset
 );
-
 input           clk;
 input   [15:0]  pc;
 input           data_en;
@@ -34,22 +35,23 @@ input           irq;
 output          reset;
 
 // MACROS ///////////////////////////////////////////
-
 parameter SDATA_BASE = 16'h400;
 parameter SDATA_SIZE = 16'hC00;
-
-parameter HMAC_BASE = 16'h0038;
-parameter HMAC_SIZE = 16'h001F;
-
+//
+parameter HMAC_BASE = 16'h0230;
+parameter HMAC_SIZE = 16'h0020;
+//
 parameter SMEM_BASE = 16'hA000;
 parameter SMEM_SIZE = 16'h4000;
-
+//
 parameter KMEM_BASE = 16'h6A00;
 parameter KMEM_SIZE = 16'h001F;
+//
+parameter CTR_BASE = 16'hFFC0;
+parameter CTR_SIZE = 16'h001F;
+/////////////////////////////////////////////////////
 
 parameter RESET_HANDLER = 16'h0000;
-
-//////////////////////////////////////////////////////
 
 wire    X_stack_reset;
 X_stack #(
@@ -61,6 +63,8 @@ X_stack #(
     .SMEM_SIZE  (SMEM_SIZE),
     .KMEM_BASE  (KMEM_BASE),
     .KMEM_SIZE  (KMEM_SIZE),
+    .CTR_BASE  (CTR_BASE),
+    .CTR_SIZE  (CTR_SIZE),
     .RESET_HANDLER  (RESET_HANDLER)
 ) X_stack_0 (
     .clk        (clk),
@@ -130,6 +134,8 @@ wire   dma_X_stack_reset;
 dma_X_stack #(
     .SDATA_BASE  (SDATA_BASE),
     .SDATA_SIZE  (SDATA_SIZE),
+    .CTR_BASE  (CTR_BASE),
+    .CTR_SIZE  (CTR_SIZE),
     .RESET_HANDLER  (RESET_HANDLER)
 ) dma_X_stack_0 (
     .clk        (clk),

@@ -45,12 +45,13 @@ module  tb_openMSP430_fpga;
 
 // VERSA: important stuff
 
-wire         [7:0] p3_dout = dut.p3_dout;
 wire       [15:0] pc    = dut.openMSP430_0.inst_pc;
 wire       [15:0] data_addr    = dut.openMSP430_0.eu_mab;
 wire        data_rd    = dut.openMSP430_0.eu_mb_en;
 wire       [1:0] data_wr    = dut.openMSP430_0.eu_mb_wr;
-wire         versa_rst = dut.openMSP430_0.hdmod_0.reset;
+wire         hwmod_rst = dut.openMSP430_0.hdmod_0.reset;
+wire         versa_rst = dut.openMSP430_0.hdmod_0.VERSA_reset;
+wire         vrased_rst = dut.openMSP430_0.hdmod_0.vrased_reset;
 wire       v_irq_dma = dut.openMSP430_0.hdmod_0.VERSA_0.VERSA_irq_dma;
 wire       v_atomicity = dut.openMSP430_0.hdmod_0.VERSA_0.VERSA_atomicity;
 wire       v_rp_gpio = dut.openMSP430_0.hdmod_0.VERSA_0.VERSA_rp_gpio;
@@ -59,11 +60,10 @@ wire       v_wp_ekey = dut.openMSP430_0.hdmod_0.VERSA_0.VERSA_wp_ekey;
 wire       v_wp_ctr = dut.openMSP430_0.hdmod_0.VERSA_0.VERSA_wp_ctr;
 
 wire              enter_rom = pc == 16'hA000;
-wire              memcmp = pc == 16'hA0DA;
-wire              auth = pc == 16'hA0F0;
+wire              memcmp = pc == 16'hA094;
+wire              auth = pc == 16'hA0AA;
 wire              exit_rom = pc == 16'hDFFE;
 wire              read_gpio = data_addr == 16'h0018;
-wire       [15:0] r1    = dut.openMSP430_0.execution_unit_0.register_file_0.r1;
 
 //
 // Wire & Register definition
@@ -146,18 +146,13 @@ reg               stimulus_done;
 //`include "registers.v"
 
 // GPIO
-//wire         [7:0] p3_din = dut.p3_din;
-//wire         [7:0] p3_dout = dut.p3_dout;
-//wire         [7:0] p3_dout_en = dut.p3_dout_en;
+wire         [7:0] p3_din = dut.p3_din;
+wire         [7:0] p3_dout = dut.p3_dout;
+wire         [7:0] p3_dout_en = dut.p3_dout_en;
 
-//wire         [7:0] p1_din = dut.p1_din;
-//wire         [7:0] p1_dout = dut.p1_dout;
-//wire         [7:0] p1_dout_en = dut.p1_dout_en;
-
-////VERSA's EXEC_FLAG
-//wire         EXEC_FLAG = dut.exec_flag;
-
-
+wire         [7:0] p1_din = dut.p1_din;
+wire         [7:0] p1_dout = dut.p1_dout;
+wire         [7:0] p1_dout_en = dut.p1_dout_en;
 
 
 // RESET SIGNAL
@@ -171,53 +166,26 @@ reg               stimulus_done;
 //wire    rst_dma_X_stack = dut.openMSP430_0.hdmod_0.vrased_0.dma_X_stack_reset;
 //wire    rst_atom = dut.openMSP430_0.hdmod_0.vrased_0.atomicity_reset;
 
-//VERSA
-//wire       v_immutability = dut.openMSP430_0.hdmod_0.VERSA_0.VERSA_immutability;
-//wire       v_atomicity = dut.openMSP430_0.hdmod_0.VERSA_0.VERSA_atomicity;
-//wire       v_output_protection = dut.openMSP430_0.hdmod_0.VERSA_0.VERSA_output_protection;
-//wire       v_VERSA_boundary_protection = dut.openMSP430_0.hdmod_0.VERSA_0.VERSA_boundary_protection;
-//wire      [2:0] atomicity_state = dut.openMSP430_0.hdmod_0.VERSA_0.VERSA_atomicity_0.pc_state;
-//wire      v_is_fst = dut.openMSP430_0.hdmod_0.VERSA_0.VERSA_atomicity_0.is_first_rom;
-//mclk
-//wire              LED8;
 // CPU registers
 //======================
 
-//wire       [15:0] pc    = dut.openMSP430_0.inst_pc;
-//wire       [15:0] r0    = dut.openMSP430_0.execution_unit_0.register_file_0.r0;
-//wire       [15:0] r1    = dut.openMSP430_0.execution_unit_0.register_file_0.r1;
-//wire       [15:0] r2    = dut.openMSP430_0.execution_unit_0.register_file_0.r2;
-//wire       [15:0] r3    = dut.openMSP430_0.execution_unit_0.register_file_0.r3;
-//wire       [15:0] r4    = dut.openMSP430_0.execution_unit_0.register_file_0.r4;
-//wire       [15:0] r5    = dut.openMSP430_0.execution_unit_0.register_file_0.r5;
-//wire       [15:0] r6    = dut.openMSP430_0.execution_unit_0.register_file_0.r6;
-//wire       [15:0] r7    = dut.openMSP430_0.execution_unit_0.register_file_0.r7;
-//wire       [15:0] r8    = dut.openMSP430_0.execution_unit_0.register_file_0.r8;
-//wire       [15:0] r9    = dut.openMSP430_0.execution_unit_0.register_file_0.r9;
-//wire       [15:0] r10   = dut.openMSP430_0.execution_unit_0.register_file_0.r10;
-//wire       [15:0] r11   = dut.openMSP430_0.execution_unit_0.register_file_0.r11;
-//wire       [15:0] r12   = dut.openMSP430_0.execution_unit_0.register_file_0.r12;
-//wire       [15:0] r13   = dut.openMSP430_0.execution_unit_0.register_file_0.r13;
-//wire       [15:0] r14   = dut.openMSP430_0.execution_unit_0.register_file_0.r14;
-//wire       [15:0] r15   = dut.openMSP430_0.execution_unit_0.register_file_0.r15;
-//wire       [1:0] chal_wen   = dut.VERSA_metadata_0.chal_wen;
-//wire       [3:0] chal_addr_reg   = dut.VERSA_metadata_0.chal_addr_reg;
-//wire       chal_cen   = dut.VERSA_metadata_0.chal_cen;
-//wire       [15:0] chal_dout   = dut.VERSA_metadata_0.chal_dout;
-//wire       [7:0] reg_addr   = dut.VERSA_metadata_0.reg_addr;
-//wire       [13:0] per_addr   = dut.VERSA_metadata_0.per_addr;
-//wire       per_en   = dut.VERSA_metadata_0.per_en;
-//wire       [15:0] per_dout   = dut.VERSA_metadata_0.per_dout;
-//wire       [15:0] per_din   = dut.VERSA_metadata_0.per_din;
-//wire       [15:0] ermin   = dut.VERSA_metadata_0.ermin;
-//wire       [15:0] ermax   = dut.VERSA_metadata_0.ermax;
-//wire       [15:0] ormin   = dut.VERSA_metadata_0.ormin;
-//wire       [15:0] ormax   = dut.VERSA_metadata_0.ormax;
-//wire       [15:0] ermin_rd   = dut.VERSA_metadata_0.ermin_rd;
-//wire       [15:0] ermax_rd   = dut.VERSA_metadata_0.ermax_rd;
-//wire       [15:0] ormin_rd   = dut.VERSA_metadata_0.ormin_rd;
-//wire       [15:0] ormax_rd   = dut.VERSA_metadata_0.ormax_rd;
-//wire       [15:0] exec_rd   = dut.VERSA_metadata_0.exec_rd;
+// wire       [15:0] pc    = dut.openMSP430_0.inst_pc;
+wire       [15:0] r0    = dut.openMSP430_0.execution_unit_0.register_file_0.r0;
+wire       [15:0] r1    = dut.openMSP430_0.execution_unit_0.register_file_0.r1;
+wire       [15:0] r2    = dut.openMSP430_0.execution_unit_0.register_file_0.r2;
+wire       [15:0] r3    = dut.openMSP430_0.execution_unit_0.register_file_0.r3;
+wire       [15:0] r4    = dut.openMSP430_0.execution_unit_0.register_file_0.r4;
+wire       [15:0] r5    = dut.openMSP430_0.execution_unit_0.register_file_0.r5;
+wire       [15:0] r6    = dut.openMSP430_0.execution_unit_0.register_file_0.r6;
+wire       [15:0] r7    = dut.openMSP430_0.execution_unit_0.register_file_0.r7;
+wire       [15:0] r8    = dut.openMSP430_0.execution_unit_0.register_file_0.r8;
+wire       [15:0] r9    = dut.openMSP430_0.execution_unit_0.register_file_0.r9;
+wire       [15:0] r10   = dut.openMSP430_0.execution_unit_0.register_file_0.r10;
+wire       [15:0] r11   = dut.openMSP430_0.execution_unit_0.register_file_0.r11;
+wire       [15:0] r12   = dut.openMSP430_0.execution_unit_0.register_file_0.r12;
+wire       [15:0] r13   = dut.openMSP430_0.execution_unit_0.register_file_0.r13;
+wire       [15:0] r14   = dut.openMSP430_0.execution_unit_0.register_file_0.r14;
+wire       [15:0] r15   = dut.openMSP430_0.execution_unit_0.register_file_0.r15;
 
 // RAM cells
 //======================

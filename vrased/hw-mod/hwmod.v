@@ -51,7 +51,7 @@ parameter SDATA_SIZE = 16'hC00;
 parameter SMEM_BASE = 16'hA000;
 parameter SMEM_SIZE = 16'h4000;
 
-parameter AUTH_HANDLER = 16'hA0F0;
+parameter AUTH_HANDLER = 16'hA0AA;
 
 parameter KMEM_BASE = 16'h6A00;
 parameter KMEM_SIZE = 16'h001F;
@@ -65,11 +65,11 @@ parameter GPIO_SIZE = 16'h0020;
 parameter EKEY_BASE = 16'h0360;
 parameter EKEY_SIZE = 16'h001F;
 
-parameter CTR_BASE = 16'h0380;
+parameter CTR_BASE = 16'hFFC0;
 parameter CTR_SIZE = 16'h001F;
 
 parameter HMAC_BASE = EKEY_BASE;
-parameter HMAC_SIZE = EKEY_SIZE + 16'h0020;
+parameter HMAC_SIZE = EKEY_SIZE;
 
 parameter RESET_HANDLER = 16'h0000;
 
@@ -87,6 +87,8 @@ vrased #(
         .HMAC_SIZE (HMAC_SIZE),
         .KMEM_BASE (KMEM_BASE),
         .KMEM_SIZE (KMEM_SIZE),
+        .CTR_BASE  (CTR_BASE),
+        .CTR_SIZE  (CTR_SIZE),
         .RESET_HANDLER (RESET_HANDLER)
 ) vrased_0 (
     .clk        (clk),

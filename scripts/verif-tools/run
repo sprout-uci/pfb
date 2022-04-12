@@ -19,7 +19,7 @@ sh ./verif-tools/verilog2smv.sh ./build-verif/hwmod.v ./build-verif/hwmod_genera
 sed -i "s/IVAR/VAR/g" ./build-verif/hwmod_generated.smv # Hacky here since IVAR doesnt work properly
 echo '#include "ltl_specs.smv"' >> ./build-verif/hwmod_generated.smv
 
-#./verif-tools/NuSMV  -v 2 -pre cpp ./build-verif/hwmod_generated.smv
+# ./verif-tools/NuSMV  -v 2 -pre cpp ./build-verif/hwmod_generated.smv
 #./verif-tools/NuSMV -coi -dcx -df -v 1 -pre cpp ./build-verif/hwmod_generated.smv
 #./verif-tools/NuSMV -ctt -v 1 -pre cpp ./build-verif/hwmod_generated.smv
 
@@ -27,10 +27,10 @@ echo '#include "ltl_specs.smv"' >> ./build-verif/hwmod_generated.smv
 ./verif-tools/NuSMV -coi -df -dcx -pre cpp ./build-verif/hwmod_generated.smv
 
 ## Gives you counter example
-#./verif-tools/NuSMV -bmc -bmc_length 10 -v 1 -pre cpp ./build-verif/hwmod_generated.smv
+# ./verif-tools/NuSMV -bmc -bmc_length 10 -v 1 -pre cpp ./build-verif/hwmod_generated.smv
 
 ## Final one to run
-#./verif-tools/NuSMV -coi -dcx -df -v 1 -pre cpp ./build-verif/hwmod_generated.smv
+# ./verif-tools/NuSMV -coi -dcx -df -v 1 -pre cpp ./build-verif/hwmod_generated.smv
 
 
 #rm -rf build-verif

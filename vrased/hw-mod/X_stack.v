@@ -24,6 +24,9 @@ parameter SDATA_SIZE = 16'h1000;
 parameter HMAC_BASE = 16'h8000;
 parameter HMAC_SIZE = 16'h001F;
 //
+parameter CTR_BASE = 16'h9000;
+parameter CTR_SIZE = 16'h001F;
+//
 parameter SMEM_BASE = 16'hE000;
 parameter SMEM_SIZE = 16'h1000;
 //
@@ -57,16 +60,22 @@ wire daddr_in_krom = !daddr_not_in_krom;
 wire daddr_not_in_HMAC = data_addr < HMAC_BASE || data_addr > HMAC_BASE + HMAC_SIZE -1;
 wire daddr_in_HMAC = !daddr_not_in_HMAC;
 
+wire daddr_not_in_ctr = data_addr < CTR_BASE || data_addr > CTR_BASE + CTR_SIZE -1;
+wire daddr_in_ctr = !daddr_not_in_ctr;
+
 wire violation1 = pc_not_in_srom && daddr_in_sdata && (r_en || w_en);
-wire violation2 = pc_in_srom && w_en && daddr_not_in_sdata && daddr_not_in_HMAC;
+wire violation2 = pc_in_srom && w_en && daddr_not_in_sdata && daddr_not_in_HMAC && daddr_not_in_ctr;
+wire violation3 = pc_not_in_srom && daddr_in_ctr && w_en;
 
 // State transition logic//////
 always @(posedge clk)
-if(state == RUN && pc_not_in_srom && daddr_in_sdata && (r_en || w_en))
+if(state == RUN && violation1)
     state <= KILL;
-else if (state == RUN && pc_in_srom && w_en && daddr_not_in_sdata && daddr_not_in_HMAC)
+else if (state == RUN && violation2)
     state <= KILL;
-else if (state == KILL && (pc == RESET_HANDLER) && !violation1 && !violation2)
+else if (state == RUN && violation3)
+    state <= KILL;
+else if (state == KILL && (pc == RESET_HANDLER) && !violation1 && !violation2 && !violation3)
     state <= RUN;
 else state <= state;
 //////////////////////////////
@@ -74,11 +83,12 @@ else state <= state;
 // Output logic //////////////
 always @(posedge clk)
 if( 
-    (state == RUN && pc_not_in_srom && daddr_in_sdata && (r_en || w_en)) ||
-    (state == RUN && pc_in_srom && w_en && daddr_not_in_sdata && daddr_not_in_HMAC)
+    (state == RUN && violation1) ||
+    (state == RUN && violation2) ||
+    (state == RUN && violation3)
 )
     key_res <= 1'b1;
-else if (state == KILL && pc == RESET_HANDLER && !violation1 && !violation2)
+else if (state == KILL && pc == RESET_HANDLER && !violation1 && !violation2 && !violation3)
     key_res <= 1'b0;
 else if (state == KILL)
     key_res <= 1'b1;
