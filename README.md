@@ -1,6 +1,5 @@
 # VERSA Formally Verified Implementation:
 
-**[This repository is still under construction]**
 **[To appear in IEEE S&P'22]**
 
 With the growing popularity of the Internet-ofThings (IoT), massive (and growing) numbers of specialized
