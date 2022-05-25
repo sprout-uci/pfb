@@ -5,7 +5,7 @@ LAST_SMEM_ADDR := SMEM_BASE + SMEM_SIZE - 0uh16_2;
 
 -- KEY RESERVED ROM
 KMEM_BASE := 0uh16_6A00;
-KMEM_SIZE := 0uh16_001F;
+KMEM_SIZE := 0uh16_0040;
 
 -- STACK RESERVED ROM
 SDATA_BASE := 0uh16_0400;
@@ -17,7 +17,7 @@ GPIO_SIZE := 0uh16_0020;
 
 -- EKEY REGION
 EKEY_BASE := 0uh16_0360;
-EKEY_SIZE := 0uh16_001F;
+EKEY_SIZE := 0uh16_0020;
 
 -- HMAC OUTPUT RESERVED ROM = EKEY in VERSA
 HMAC_BASE := EKEY_BASE;
@@ -25,7 +25,7 @@ HMAC_SIZE := EKEY_SIZE;
 
 -- CTR REGION
 CTR_BASE := 0uh16_FFC0;
-CTR_SIZE := 0uh16_001F;
+CTR_SIZE := 0uh16_0020;
 
 -- METADATA
 META_BASE := 0uh16_0140;
@@ -124,7 +124,7 @@ LTLSPEC G((pc_in_ER & ("irq" | "dma_en")) -> "reset");
 -----------------------------
 
 -- Reset correctness
-LTLSPEC  G("reset" -> (("reset" U pc_reset) | G("reset")));
+LTLSPEC G("reset" -> (("reset" U pc_reset) | G("reset")));
 
 -- Exclusive Access to Key ---
 LTLSPEC G ((!pc_in_srom & access_key) -> "reset");

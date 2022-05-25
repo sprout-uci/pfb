@@ -45,10 +45,10 @@ parameter SMEM_BASE = 16'hA000;
 parameter SMEM_SIZE = 16'h4000;
 //
 parameter KMEM_BASE = 16'h6A00;
-parameter KMEM_SIZE = 16'h001F;
+parameter KMEM_SIZE = 16'h0020;
 //
 parameter CTR_BASE = 16'hFFC0;
-parameter CTR_SIZE = 16'h001F;
+parameter CTR_SIZE = 16'h0020;
 /////////////////////////////////////////////////////
 
 parameter RESET_HANDLER = 16'h0000;

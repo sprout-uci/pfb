@@ -54,7 +54,7 @@ parameter SMEM_SIZE = 16'h4000;
 parameter AUTH_HANDLER = 16'hA0AA;
 
 parameter KMEM_BASE = 16'h6A00;
-parameter KMEM_SIZE = 16'h001F;
+parameter KMEM_SIZE = 16'h0040;
 
 parameter META_MIN = 16'h0140;
 parameter META_SIZE = 16'h0004;
@@ -63,10 +63,10 @@ parameter GPIO_BASE = 16'h0018;
 parameter GPIO_SIZE = 16'h0020;
 
 parameter EKEY_BASE = 16'h0360;
-parameter EKEY_SIZE = 16'h001F;
+parameter EKEY_SIZE = 16'h0020;
 
 parameter CTR_BASE = 16'hFFC0;
-parameter CTR_SIZE = 16'h001F;
+parameter CTR_SIZE = 16'h0020;
 
 parameter HMAC_BASE = EKEY_BASE;
 parameter HMAC_SIZE = EKEY_SIZE;
