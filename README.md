@@ -1,7 +1,5 @@
 # VERSA Formally Verified Implementation:
 
-**[To appear in IEEE S&P'22]**
-
 With the growing popularity of the Internet-ofThings (IoT), massive (and growing) numbers of specialized
 devices are deployed worldwide, in many everyday settings,
 including homes, offices, vehicles, public spaces, and factories.
